@@ -1,6 +1,6 @@
 
 *.pyc
-apache2*
-lib*
-bin*
-third_party*
+apache2
+lib
+bin
+third_party
