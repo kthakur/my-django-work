@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/802/examples/trunk/bytearray/python
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/737/examples/trunk/bytearray/python/manage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/737/examples/trunk/bytearray/python/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/737/examples/trunk/bytearray/python/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/779/examples/trunk/bytearray/python/urls.py
+END
+server.wsgi
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/783/examples/trunk/bytearray/python/server.wsgi
+END

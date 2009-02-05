@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PYTHONPATH=/home/gongura/webapps/django/lib/python2.5
+/home/gongura/webapps/django/apache2/bin/httpd -f /home/gongura/webapps/django/apache2/conf/httpd.conf -k start

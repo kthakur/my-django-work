@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/802/examples/trunk/bytearray/python/gateway
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/784/examples/trunk/bytearray/python/gateway/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/779/examples/trunk/bytearray/python/gateway/__init__.py
+END
+gateway.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/779/examples/trunk/bytearray/python/gateway/gateway.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/737/examples/trunk/bytearray/python/gateway/models.py
+END

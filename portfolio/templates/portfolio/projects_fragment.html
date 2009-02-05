@@ -1,0 +1,59 @@
+{% load portfolio %}
+	<ul class="content_block">
+  {% for project in projects.all %}
+		<li>
+  {% include "portfolio/dates_fragment.html" %}
+  <h2 class="mainhead"><a href="{% url project_detail project.slug %}">{{ project }}</a></h2>
+  <ul class="skills">
+    {% for skill in project.skills.all %}
+    <li><a href="{% url skill_detail skill.slug %}">{{ skill }}</a></li>
+    {% endfor %}
+  </ul>
+  <p class="projectcont">{{ project.short_description|safe }}</p>
+
+  {% with project.projectimage_set.all as images %}
+  {% if images %}
+ {% with images.0 as image %}  
+   <img height="60px" src="{{ image.image.url }}" alt="{{ image.image.name|split:"/"|last }}" title="{{ image.image.name|split:"/"|last }}">
+  {% endwith %}
+
+  {% endif %}
+  {% endwith %}
+	</li>
+  {% endfor %}
+  </ul>
+
+<!--
+{% load portfolio %}
+	<ul class="content_block">
+  {% for project in projects.all %}
+		<li>
+			<div class="imgblocksuperwrap">
+				{% with project.projectimage_set.all as images %}
+				<div class="mainhead"><h2>{{ project.slug }}</h2></div>
+				{% if images %}
+				 {% with images.0 as image %}  
+				  <div class="imgwrapper"> <a href="{% url project_detail project.slug %}"><img src="{{ image.image.url }}" alt="{{ image.image.name|split:"/"|last }}" title="{{ image.image.name|split:"/"|last }}">
+					</a>
+					</div>
+				  {% endwith %}
+
+				  {% endif %}
+				  {% endwith %}
+				</div>
+///			
+  {% include "portfolio/dates_fragment.html" %}
+  <h2 class="mainhead"><a href="{% url project_detail project.slug %}">{{ project }}</a></h2>
+  <ul class="skills">
+    {% for skill in project.skills.all %}
+    <li><a href="{% url skill_detail skill.slug %}">{{ skill }}</a></li>
+    {% endfor %}
+  </ul>
+  <p class="projectcont">{{ project.short_description|safe }}</p>
+///
+  
+	</li>
+  {% endfor %}
+  </ul>
+
+-->

@@ -1,0 +1,59 @@
+{% load portfolio %}
+<div id="project">
+  {% include "portfolio/dates_fragment.html" %}
+  <h2 class="mainhead">{{ project.name }}</h2>
+
+
+  <ul class="skills">
+    {% for skill in project.skills.all %}
+    <li><a href="{% url skill_detail skill.slug %}">{{ skill }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+
+  {% if project.pull_quote %}
+  <p class="pull-quote">
+  {{ project.pull_quote }}
+  </p>
+  {% endif %}
+  
+
+
+  <div id="description">
+	<p class="projectcont">
+  {{ project.description|safe }}
+	</p>
+  </div>
+
+  {% with project.projectfile_set.all as files %}
+  {% if files %}
+  <ol id="files">
+    {% for file in files %}
+    <li><a href="{{ file.file.url }}">{{ file.file.name|split:"/"|last }}</a></li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+  {% endwith %}
+
+  {% with project.projectimage_set.all as images %}
+  {% if images %}
+  <ul id="images">
+    {% for image in images %}
+    <li>
+    <a class="thickbox" href="{{ image.image.url }}"><img height="60px" src="{{ image.image.url }}" alt="{{ image.image.name|split:"/"|last }}" title="{{ image.image.name|split:"/"|last }}" /> </a>
+<p class="image-description">{{ image.desc }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+
+
+  {% if project.url %}
+  <h3 class="url"><a target="_blank" href="{{ project.url }}">{{ project.url }}</a></h3>
+  {% endif %}
+
+</div>
+
+

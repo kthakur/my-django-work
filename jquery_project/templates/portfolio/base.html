@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css"> 
+<link type="text/css" rel="stylesheet" href="/static/styles/portfolio.css" />
+<link type="text/css" rel="stylesheet" href="/static/styles/thickbox.css" />
+<script type="text/javascript" src="/static/js/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="/static/js/portfolio.js"></script>
+<script type="text/javascript" src="/static/js/thickbox.js"></script>
+
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+	
+	<div id="wrapper">
+		<div class="content">
+		<div id="header">
+			<h1><a href="/">~Portfolio</a>	</h1>
+		</div>
+{% block content %}{% endblock %}
+			</div>
+			
+		</div>
+
+
+</body>
+</html>

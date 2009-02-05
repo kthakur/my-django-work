@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/home/gongura/webapps/django/apache2/bin/stop
+sleep 3
+/home/gongura/webapps/django/apache2/bin/start

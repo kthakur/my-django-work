@@ -1,0 +1,9 @@
+<ul id="skills">
+  {% for skill in skill_list %}
+  {% ifequal skill.pk selected.pk %}
+  <li class="selected"><a href="{% url skill_detail skill.slug %}">{{ skill }}</a></li>
+  {% else %}
+  <li><a href="{% url skill_detail skill.slug %}">{{ skill }}</a></li>
+  {% endifequal %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,59 @@
+{% load webdesign %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>{{ flatpage.title }} </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link rel="stylesheet" href="/static/blueprint-css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/static/blueprint-css/blueprint/print.css" type="text/css" media="print">
+<!--[if IE]>
+  <link rel="stylesheet" href="/static/blueprint-css/blueprint/ie.css" type="text/css" media="screen, projection">
+<![endif]-->
+
+
+<script src="/static/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+<div class="container">
+	
+	<div class="span-24">
+
+<h1> {{ flatpage.title }} </h1>
+</div>
+
+<div class="span-4">
+<p>{{ flatpage.content }}</p>
+</div>
+
+
+<div class="span-16">
+
+	
+	<form method="get" action="/search/">
+	<p><label for="id_q">Search:</label>
+		<input type="text" name="q" id="id_q" />
+		<input type="submit" value="Submit" /></p>
+	</form>
+
+
+
+<p>{% lorem 5 p %}</p>
+
+
+</div>
+
+<div class="span-4 last">
+<a href="/static/index.html">link test</a>
+</div>
+
+
+</div>
+</body>
+
+</html>

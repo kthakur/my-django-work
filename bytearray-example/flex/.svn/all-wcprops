@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/1957/examples/trunk/bytearray/flex
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1701/examples/trunk/bytearray/flex/.project
+END
+.flexProperties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/1701/examples/trunk/bytearray/flex/.flexProperties
+END
+.actionScriptProperties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1701/examples/trunk/bytearray/flex/.actionScriptProperties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/735/examples/trunk/bytearray/flex/build.xml
+END
