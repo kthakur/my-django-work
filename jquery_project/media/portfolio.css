@@ -1,0 +1,128 @@
+body {
+	
+}
+
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;	
+  padding: 1% 0;
+}
+
+#header{
+	border-bottom: 1px solid #777777;
+	margin-bottom: 10px;
+}
+
+
+.content_block {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #777777;
+	margin-bottom: 15px;
+}
+
+
+a, a:visited, a:hover { color: #3f7591; text-decoration: underline;}
+
+h1 {
+	font-size: 200%;
+	color: #777777;
+}
+
+.mainhead {
+	font-size: 160%;
+	padding-bottom: 7px;
+}
+
+#groups {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    height: 100%;
+}
+#projects {
+ float: left;
+ width:790px;
+ margin-left: 10px;
+}
+
+li.selected {
+  font-weight: bold;
+}
+
+.pull-quote {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  border: 1px solid black;
+  font-style: italic;
+}
+
+#images, #skills, #categories, ul.skills {
+    list-style: none;
+}
+
+#skills, #categories {
+    border: 1px solid #777;
+    padding: 1em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#files {
+    list-style-position: inside;
+}
+
+ul.skills {
+    overflow: auto;
+    display: block;
+    padding-bottom: 15px;
+}
+
+
+ul.skills li {
+    margin-right: 1em;
+    float: right;
+}
+
+li.title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#projects {
+    list-style: none;
+}
+
+.dates {
+    float: right;
+}
+
+.url {
+    float: right;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.project .details {
+    border: 1px solid #777;
+    width: 200px;
+    float: right;
+    padding: 1em;
+    padding-top: 0.25em;
+    margin: 1em;
+}
+
+.image-description {
+    font-style: italic;
+}
+
+#counter {
+    float: right;
+    margin-right: 1em;
+    font-style: italic;
+}
+
+p.projectcont {
+	padding: 10px 0;
+}

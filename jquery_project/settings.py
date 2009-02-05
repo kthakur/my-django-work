@@ -73,7 +73,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-	'siteroot',
+	#'siteroot',
     'portfolio',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,7 +83,7 @@ INSTALLED_APPS = (
 	'django.contrib.markup',
 )
 
-# try:
- #   from local_settings import *
-#except ImportError:
- #   pass 
+try:
+   from lcsettings import *
+except ImportError:
+	 pass 
