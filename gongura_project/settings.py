@@ -66,7 +66,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'jquery_project.urls'
+ROOT_URLCONF = 'gongura_project.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(ROOT_PATH, 'templates'),
@@ -83,7 +83,7 @@ INSTALLED_APPS = (
 	'django.contrib.markup',
 )
 
-try:
-   from lcsettings import *
-except ImportError:
-	 pass 
+#try:
+#   from lcsettings import *
+#except ImportError:
+#	 pass 
