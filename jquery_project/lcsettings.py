@@ -4,7 +4,7 @@ import os
 ROOT_PATH = os.path.dirname(__file__)
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-CACHE_BACKEND="locmem:///"
+#CACHE_BACKEND="locmem:///"
 
 DATABASE_NAME = 'djangoport'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'root'             # Not used with sqlite3.
