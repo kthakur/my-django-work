@@ -83,7 +83,7 @@ INSTALLED_APPS = (
 	'django.contrib.markup',
 )
 
-try:
-   from lcsettings import *
-except ImportError:
-	 pass 
+#try:
+#   from lcsettings import *
+#except ImportError:
+#	 pass 
